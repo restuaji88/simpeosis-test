@@ -43,7 +43,7 @@ services:
         restart: unless-stopped
         tty: true
         ports:
-            - "3306:3306"s
+            - "3306:3306"
         environment:
             MYSQL_DATABASE: vote1_0
 #            MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
