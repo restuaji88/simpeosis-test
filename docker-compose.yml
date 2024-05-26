@@ -12,6 +12,7 @@ services:
         environment:
             SERVICE_NAME: app
             SERVICE_TAGS: dev
+            - PHP_MEMORY_LIMIT=2G
         working_dir: /var/www
         volumes:
             - ./:/var/www
