@@ -4,28 +4,29 @@
 
 <head>
     @include('template.headerr')
+    <title>E-vote | {{auth()->user()->level}} | Edit</title>
 </head>
 <body>
 
-    <!--*******************
+    <!--*******
         Preloader start
-    ********************-->
+    ********-->
      @include('template.topbarr')
-        <!--**********************************
+        <!--************
             Header end ti-comment-alt
-        ***********************************-->
+        *************-->
 
-        <!--**********************************
+        <!--************
             Sidebar start
-        ***********************************-->
+        *************-->
        @include('template.sidebarr')
-        <!--**********************************
+        <!--************
             Sidebar end
-        ***********************************-->
+        *************-->
         
-        <!--**********************************
+        <!--************
             Content body start
-        ***********************************-->
+        *************-->
         <div class="content-body">
             <div class="container-fluid">
                 <!-- Add Project -->
@@ -118,7 +119,7 @@
                                     </span>
                                 </div>
                             </div>
-                             <label class="text-label"style="color: red;">* Jika tidak ingin mengganti password makan tidak perlu diisi </label>
+                             <label class="text-label"style="color: red;">* Jika tidak ingin mengganti password maka tidak perlu diisi </label>
                         </div>
                         <div class="form-group">
                             <label>Select list (select one): *</label>
@@ -146,40 +147,40 @@
                 </div>
             </div>
         </div>
-        <!--**********************************
+        <!--************
             Content body end
-        ***********************************-->
+        *************-->
 
 
-        <!--**********************************
+        <!--************
             Footer start
-        ***********************************-->
+        *************-->
         <div class="footer">
             <div class="copyright">
                 <p>Copyright © Designed &amp; Developed by <a href="/home" target="_blank">SYNC</a> 2024</p>
             </div>
         </div>
-        <!--**********************************
+        <!--************
             Footer end
-        ***********************************-->
+        *************-->
 
-        <!--**********************************
+        <!--************
            Support ticket button start
-        ***********************************-->
+        *************-->
 
-        <!--**********************************
+        <!--************
            Support ticket button end
-        ***********************************-->
+        *************-->
 
         
     </div>
-    <!--**********************************
+    <!--************
         Main wrapper end
-    ***********************************-->
+    *************-->
 
-    <!--**********************************
+    <!--************
         Scripts
-    ***********************************-->
+    *************-->
     <!-- Required vendors -->
  @include('template.scripts')
 </body>

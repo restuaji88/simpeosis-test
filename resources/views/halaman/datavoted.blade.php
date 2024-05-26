@@ -3,6 +3,7 @@
 
 <head>
     @include('template.headerr')
+    <title>E-vote | {{auth()->user()->level}} | Voted </title>
 </head>
 
 <body>
@@ -200,11 +201,6 @@
     });
 });
     </script>
-    <script>
-        // Fungsi untuk merefresh halaman setiap 3 menit
-        setInterval(function() {
-            location.reload();
-        }, 60000); // 3 menit = 180000 milidetik
-    </script>
+    
 </body>
 </html>

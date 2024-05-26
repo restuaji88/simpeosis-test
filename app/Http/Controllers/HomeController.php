@@ -60,7 +60,24 @@ class HomeController extends Controller
             'persentaseSuaraSudahMemilih', 
             'jumlahSuaraBelumMemilih', 
             'persentaseSuaraBelumMemilih',
-            'expired'
+            'expired',
+            'settings'
         ));
     }
+ public function petunjuk()
+    {
+        // return view('tambah.add_guruu');
+         $settings = SettingWaktu::all();
+
+            $expired = false;
+    foreach ($settings as $setting) {
+        if (Carbon::now()->greaterThanOrEqualTo($setting->waktu)) {
+            $expired = true;
+            break;
+        }
+    }
+        // Meneruskan data ke tampilan
+        return view('halaman.petunjuk', compact('expired','settings'));
+    }
+
 }

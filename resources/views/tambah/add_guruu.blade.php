@@ -4,28 +4,30 @@
 
 <head>
     @include('template.headerr')
+    <title>E-vote | {{auth()->user()->level}} | Add</title>
+
 </head>
 <body>
 
-    <!--*******************
+    <!--*******
         Preloader start
-    ********************-->
+    ********-->
      @include('template.topbarr')
-        <!--**********************************
+        <!--************
             Header end ti-comment-alt
-        ***********************************-->
+        *************-->
 
-        <!--**********************************
+        <!--************
             Sidebar start
-        ***********************************-->
+        *************-->
        @include('template.sidebarr')
-        <!--**********************************
+        <!--************
             Sidebar end
-        ***********************************-->
+        *************-->
         
-        <!--**********************************
+        <!--************
             Content body start
-        ***********************************-->
+        *************-->
         <div class="content-body">
             <div class="container-fluid">
                 <!-- Add Project -->
@@ -148,7 +150,7 @@
                                         <div class="form-group">
                                             <div class="form-check">
                                                 <input id="checkbox1" class="form-check-input" type="checkbox" required>
-                                                <label for="checkbox1" class="form-check-label">Check me out &</label>
+                                                <label for="checkbox1" class="form-check-label">Check me out *</label>
                                             </div>
                                         </div>
                                         <button type="submit" class="btn mr-2 btn-primary">Submit</button>
@@ -161,40 +163,40 @@
                 </div>
             </div>
         </div>
-        <!--**********************************
+        <!--************
             Content body end
-        ***********************************-->
+        *************-->
 
 
-        <!--**********************************
+        <!--************
             Footer start
-        ***********************************-->
+        *************-->
         <div class="footer">
             <div class="copyright">
                 <p>Copyright © Designed &amp; Developed by <a href="/home" target="_blank">SYNC</a> 2024</p>
             </div>
         </div>
-        <!--**********************************
+        <!--************
             Footer end
-        ***********************************-->
+        *************-->
 
-        <!--**********************************
+        <!--************
            Support ticket button start
-        ***********************************-->
+        *************-->
 
-        <!--**********************************
+        <!--************
            Support ticket button end
-        ***********************************-->
+        *************-->
 
         
     </div>
-    <!--**********************************
+    <!--************
         Main wrapper end
-    ***********************************-->
+    *************-->
 
-    <!--**********************************
+    <!--************
         Scripts
-    ***********************************-->
+    *************-->
     <!-- Required vendors -->
  @include('template.scripts')
 </body>

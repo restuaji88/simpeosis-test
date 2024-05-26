@@ -66,7 +66,7 @@ class OsisController extends Controller
         }
     }
 
-    return view('tambah.add_osis', compact('settings', 'expired','calonVote'));
+    return view('tambah.add_osis', compact('settings', 'expired'));
     }
 
     public function store(Request $request)
