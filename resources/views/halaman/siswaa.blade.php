@@ -1,4 +1,6 @@
+set_time_limit(360); 
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
