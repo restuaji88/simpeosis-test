@@ -15,5 +15,6 @@ class DatabaseSeeder extends Seeder
     {
         // Panggil seeder UsersTableSeeder
         $this->call(UsersTableSeeder::class);
+        $this->call(SettingsTableSeeder::class);
     }
 }
