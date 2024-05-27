@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Polling; // Import model Polling
+use App\Models\polling; // Import model Polling
 use App\Models\User;
 use App\Models\Osis; // Import model User
 use DB;
@@ -15,7 +15,7 @@ class DataVoteController extends Controller
     public function view()
     {   
         // Mengambil data hasil voting beserta nama calon dan jumlah suara
-        $hasilVotings = Polling::all();
+        $hasilVotings = polling::all();
 
         // Ambil nama calon dari model User
         foreach ($hasilVotings as $hasilVoting) {
