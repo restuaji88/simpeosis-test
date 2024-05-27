@@ -19,7 +19,11 @@ RUN apt-get update && apt-get install -y \
 
 # Membersihkan cache apt
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
-
+# Menambahkan konfigurasi PHP
+RUN echo "max_execution_time=36000" >> /usr/local/etc/php/conf.d/99-custom.ini
+RUN echo "max_input_time=360" >> /usr/local/etc/php/conf.d/99-custom.ini
+RUN echo "upload_max_filesize=2G" >> /usr/local/etc/php/conf.d/99-custom.ini
+RUN echo "post_max_size=2G" >> /usr/local/etc/php/conf.d/99-custom.ini
 # Install ekstensi PHP
 RUN docker-php-ext-install pdo_mysql mbstring zip exif pcntl
 RUN docker-php-ext-configure gd --with-freetype --with-jpeg

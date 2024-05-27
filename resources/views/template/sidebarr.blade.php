@@ -2,7 +2,7 @@
 	<div class="deznav-scroll">
 		<div class="main-profile">
 			<div class="image-bx">
-				<img src="{{ asset ('dash/images/kaneta.png') }}" alt="">
+				<img src="{{ asset ('dash/images/Kaneta.png') }}" alt="">
 				{{-- <a href="javascript:void(0);"><i class="fa fa-cog" aria-hidden="true"></i></a> --}}
 			</div>
 			<h5 class="name"><span class="font-w400">Hello,</span>{{auth()->user()->name}}</h5>
