@@ -30,7 +30,7 @@ jobs:
           host: 103.210.69.74
           port: 22
           username: User10
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          key: ${{ secrets.SSH_KEY }}
           script: |
             cd /home/User8/transgo-backend
             git pull origin main
