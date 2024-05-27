@@ -32,6 +32,6 @@ jobs:
           username: User10
           key: ${{ secrets.SSH_KEY }}
           script: |
-            cd /home/User8/transgo-backend
+            cd /home/User10/simpeosis-test
             git pull origin main
             git status
