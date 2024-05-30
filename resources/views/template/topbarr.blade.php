@@ -98,11 +98,6 @@
                     </ul>
                 </div>
             </nav>
-            <div class="sub-header">
-                <div class="d-flex align-items-center flex-wrap mr-auto">
-                    {{-- <h5 class="dashboard_bar">Dashboard</h5> --}}
-                </div>
-                
-            </div>
+          
         </div>
     </div>
