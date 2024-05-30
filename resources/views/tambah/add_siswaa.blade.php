@@ -111,7 +111,7 @@
                                                 <div class="input-group-prepend">
                                                     <span class="input-group-text"> <i class="fa fa-user"></i> </span>
                                                 </div>
-                                                <input type="text" class="form-control" id="val-username1" name="email" placeholder="Enter a email.." value="{{old('email')}}"required>
+                                                <input type="email" class="form-control" id="val-username1" name="email" placeholder="Enter a email.." value="{{old('email')}}"required>
                                             </div>
                                              @error('email')
                                             <span class="mt-4 text-danger">{{$message}}</span>
